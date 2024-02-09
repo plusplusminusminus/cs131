@@ -1,0 +1,7 @@
+    1  wget www.github.com
+    2  git clone https://github.com/plusplusminusminus/cs131.git
+    3  ls
+    4  cd cs131
+    5  mkdir Worksheet1
+    6  cd Worksheet1
+    7  history > cmds.log
