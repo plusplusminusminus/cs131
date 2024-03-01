@@ -1,0 +1,58 @@
+1) Make a directory Assignment1 under your home directory and change to it.
+1 mkdir Assignment1
+2 cd Assignment1
+
+
+2) Echo your current Shell using the global variable and paste the output of th command. 
+3 echo $SHELL
+
+
+3) Echo your home directory path and paste the output of the command.
+4 echo $HOME
+
+
+4) What is your UID? 
+5 echo $UID
+
+4) To what group(s) do you belong?
+6 groups
+
+
+5) Create a new directory "myDir" under the Assignment 1 folder. Now remove "write" permission for yourself.
+7 mkdir myDIR
+8 man chmod
+9 chmod u-w myDir
+
+
+5) From this temp directory, are you allowed to cd in that directory?
+10 cd myDir
+
+5) Can you "ls" it?
+11 ls
+
+5) Can you "ls -l" it?
+12 ls -l
+
+5) Can you create files under it?
+13 touch foo
+
+
+6) Create a new directory "myDir2" and create a new directory "MyDir3".
+14 cd ..
+15 mkdir myDir2
+16 mkdir myDir3
+
+7) Inside myDir2, create a file "MyFile.tt". Once done, move this file from myDir2 to MyDir3
+17 touch myDir2/myFile.txt
+18 mv myDir2/myFile.txt myDir3
+
+8) Find the total amount of RAM/Memory in the IBM VM using the 'free' command. Display the amount of memory in mebibytes.
+19 free -m
+
+9) Identify the operating system version. Which file under /etc/contains this information?
+20 cat /etc/system-release
+
+9) What is the permission (given to all users) for the file containing the OS version information?
+21 ls -l /etc/system-release
+22 ls -l /etc/redhat-release
+

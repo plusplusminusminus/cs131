@@ -1,0 +1,76 @@
+1) Make a directory Assignment1 under your home directory and change to it.
+bash-4.4$ mkdir Assignment1
+bash-4.4$ cd Assignment1
+
+2) Echo your current Shell using the global variable and paste the output of th command. 
+bash-4.4$ echo $SHELL
+/bin/bash
+ANSWER: Bash
+
+
+3) Echo your home directory path and paste the output of the command.
+bash-4.4$ echo $HOME
+/mnt/scratch/FA23_CS131_Ashish/tylermsp24
+ANSWER: /mnt/scratch/FA23_CS131/Ashish/tylremsp24
+
+4) What is your UID? To what group(s) do you belong?
+bash-4.4$ echo $UID
+1233
+ANSWER: 1233
+
+bash-4.4$ groups
+tylermsp24 S77
+ANSWER: tylermps24, S77
+
+5) Create a new directory "myDir" under the Assignment 1 folder. Now remove "write" permission for yourself.
+bash-4.4$ mkdir myDIR
+bash-4.4$ man chmod
+bash-4.4$ chmod u-w myDir
+
+From this temp directory, are you allowed to cd in that directory?
+bash-4.4$ cd myDir
+ANSWER: Yes
+
+Can you "ls" it?
+bash-4.4$ ls
+ANSWER: Yes
+
+Can you "ls -l" it?
+bash-4.4$ ls -l
+ANSWER: Yes
+
+Can you create files under it?
+bash-4.4$ touch foo
+touch: cannot touch 'foo': Permission denied
+ANSWER: No
+
+6) Create a new directory "myDir2" and create a new directory "MyDir3".
+bash-4.4$ cd ..
+bash-4.4$ mkdir myDir2
+bash-4.4$ mkdir myDir3
+
+7) Inside myDir2, create a file "MyFile.tt". Once done, move this file from myDir2 to MyDir3
+bash-4.4$ touch myDir2/myFile.txt
+bash-4.4$ mv myDir2/myFile.txt myDir3
+
+8) Find the total amount of RAM/Memory in the IBM VM using the 'free' command. Display the amount of memory in mebibytes.
+bash-4.4$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:          71367       33002       19017        3571       19348       33335
+Swap:          4119           0        4119
+ANSWER: 71,367 MiB
+
+9) Identify the operating system version. Which file under /etc/contains this information?
+bash-4.4$ cat /etc/system-release
+Red Hat Enterprise Linux release 8.6 (Ootpa)
+ANSWER: Red Hat Enterprise Linux releae 8.6
+
+Which file under /etc/ contains this information?
+ANSWER: /etc/system-release (which is a soft-link to /etc/redhat-release)
+
+What is the permission (given to all users) for the file containing the OS version information?
+bash-4.4$ ls -l /etc/system-release
+lrwxrwxrwx. 1 root root 14 Apr  6  2022 /etc/system-release -> redhat-release
+bash-4.4$ le -l /etc/redhat-release
+-rw-r--r--. 1 root root 45 Apr  6  2022 /etc/redhat-release
+ANSWER: read permission
