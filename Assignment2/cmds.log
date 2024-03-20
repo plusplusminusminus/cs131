@@ -1,0 +1,19 @@
+Question 1:
+find /etc -type f > one.txt 2> two.txt
+
+Question 1b:
+cat one.txt
+cat two.txt
+
+Question 2:
+cut -d, -f 20-21 <'Global YouTube Statistics.csv' | grep -v created_year | grep -v nan | sort | uniq -c | sort -n -r | head -3
+
+Question 3:
+ps -u $USER
+
+Question 4:
+ps -u $USER
+
+Question 5:
+ps -ef | grep systemd | head -1
+
