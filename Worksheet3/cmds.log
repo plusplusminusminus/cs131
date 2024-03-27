@@ -1,0 +1,20 @@
+TASK 1:
+    1  for i in {"United States","United Kingdom","India"}; do echo -n "$i: "; cut -d, -f2,8,16 'Global YouTube Statistics.csv' | sort -n -r -t, -k3 | grep "$i" | head -1 | cut -d, -f1,3; done > ws3.txt
+EXPLANATION:
+- Uses a for loop to loop over country (field 8 in the csv file)
+- cut switches: -d, (use comma delimiter) -f2,8,16 (extract fields 2, 8, and 16
+- sort switches: -n (sort numerically) -r (descending) -t, (use comma delimiter) -k3 (field 3)
+- head switches: -1 (just first line)
+- cut switches: -d, (use comma delimiter) -f1,3 (extract fields 1 and 3)
+
+TASK 2:
+    2  for i in {Sports,Education,Entertainment}; do echo -n "$i: "; cut -d, -f2,3,5 'Global YouTube Statistics.csv' | sort -n -r -t, -k2 | grep "$i" | head -1 | cut -d, -f1,2; done >> ws3.txt
+EXPLANATION:
+- Uses a for loop to loop over category (field 3 in the csv file)
+- cut switches: -d, (use comma delimiter) -f2,3,5 (extract fields 2, 3, and 5 
+- sort switches: -n (sort numerically) -r (descending) -t, (use comma delimiter) -k2 (field 2)
+- head switches: -1 (just first line)
+- cut switches: -d, (use comma delimiter) -f1,2 (extract fields 1 and 2)
+
+    3  history > cmds.log
+

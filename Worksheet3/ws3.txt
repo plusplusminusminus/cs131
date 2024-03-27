@@ -1,0 +1,10 @@
+Task 1: Highest Monthly Earner from the United States, United Kingdom, and India:
+United States: DaFuq!?Boom!,9200000
+United Kingdom: Woody & Kleiny,2000000
+India: T-Series,9000000
+
+Task 2: Highest Subscribed Channel from categories Sports, Education, and Entertainment:
+Sports: WWE,96000000
+Education: Cocomelon - Nursery Rhymes,162000000
+Entertainment: MrBeast,166000000
+
