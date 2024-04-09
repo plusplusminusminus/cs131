@@ -1,0 +1,61 @@
+====================================================================================================
+TASK 1:
+====================================================================================================
+Script started on 2024-04-08 21:47:26-04:00
+bash-4.4$ cd ~
+bash-4.4$ vi .bashrc
+bash-4.4$ source .bashrc
+bash-4.4$ l
+total 880
+-rw-rw-r-- 1 tylermsp24 tylermsp24 208018 Feb  1 00:16  index.html
+drwxrwxr-x 2 tylermsp24 tylermsp24   4096 Feb  1 17:15  files
+-rw-rw-r-- 1 tylermsp24 tylermsp24      0 Feb 13 03:30 '[spotify-2023.csv]'
+-rw-rw-r-- 1 tylermsp24 tylermsp24 106270 Feb 13 03:33  spotify-2023.csv
+drwxrwxr-x 2 tylermsp24 tylermsp24   4096 Feb 22 17:27  newDir
+-rw-rw-r-- 1 tylermsp24 tylermsp24 200279 Feb 23 01:56 'Global YouTube Statistics.csv'
+-rw-rw-r-- 1 tylermsp24 tylermsp24  45859 Feb 23 01:58  Music.txt
+-rw-rw-r-- 1 tylermsp24 tylermsp24     33 Feb 23 02:01  counts.txt
+drwxrwxr-x 5 tylermsp24 tylermsp24   4096 Feb 23 22:18  cs131
+drwxrwxr-x 2 tylermsp24 tylermsp24   4096 Mar  1 02:16  Worksheet2
+drwxrwxr-x 2 tylermsp24 tylermsp24   4096 Mar  1 02:16  Worksheet1
+-rw-rw-r-- 1 tylermsp24 tylermsp24      8 Mar  1 02:16  README.md
+-rw-rw-r-- 1 tylermsp24 tylermsp24    561 Mar 12 16:37  res.txt
+-rw-rw-r-- 1 tylermsp24 tylermsp24    561 Mar 12 16:42  wc
+prw-rw-r-- 1 tylermsp24 tylermsp24      0 Mar 12 17:05  myPipe
+-rw-rw-r-- 1 tylermsp24 tylermsp24 200279 Mar 20 00:19  gys.csv
+drwxrwxr-x 5 tylermsp24 tylermsp24   4096 Mar 20 01:45  Assignment1
+-rw-rw-r-- 1 tylermsp24 tylermsp24    565 Mar 20 02:17  two.txt
+-rw-rw-r-- 1 tylermsp24 tylermsp24  18446 Mar 20 02:17  one.txt
+-rw-rw-r-- 1 tylermsp24 tylermsp24  21924 Mar 20 02:19  typescript
+drwxrwxr-x 2 tylermsp24 tylermsp24   4096 Mar 20 04:20  Assignment2
+-rw-rw-r-- 1 tylermsp24 tylermsp24      0 Mar 26 16:45  toppings.txt
+-rw-rw-r-- 1 tylermsp24 tylermsp24  15987 Mar 26 16:50  users.txt
+-rw-rw-r-- 1 tylermsp24 tylermsp24      0 Mar 26 17:27  awkscr_var-user-defined
+-rw-rw-r-- 1 tylermsp24 tylermsp24    374 Mar 27 02:30  ws3.txt
+-rw-rw-r-- 1 tylermsp24 tylermsp24   1169 Mar 27 02:38  cmds.log
+drwxrwxr-x 2 tylermsp24 tylermsp24   4096 Mar 27 02:40  Worksheet3
+-rw-rw-r-- 1 tylermsp24 tylermsp24   2740 Apr  8 01:03  United_States.txt
+-rw-rw-r-- 1 tylermsp24 tylermsp24   1577 Apr  8 01:03  India.txt
+-rw-rw-r-- 1 tylermsp24 tylermsp24   4096 Apr  8 21:47  ws4.txt
+bash-4.4$ w
+     31     274    1997
+
+====================================================================================================
+TASK 2:
+====================================================================================================
+bash-4.4$ mkdir Worksheet4
+bash-4.4$ cd Worksheet4
+bash-4.4$ mkdir Subscribers
+bash-4.4$ grep -a "United States" 'Global YouTube Statistics.csv' | cut -d, -f3 > Subscribers/United_States.txt
+bash-4.4$ grep -a "India" 'Global YouTube Statistics.csv' | cut -d, -f3 > Subscribers/India.txt
+bash-4.4$ cd Subscribers
+bash-4.4$ echo -n "United States: " > ws4_means.txt ; echo "scale=2; $(paste -sd+ United_States.txt | bc)/$(wc -l < United_States.txt)" | bc >> ws4_means.txt
+bash-4.4$ echo -n "India: " >> ws4_means.txt ; echo "scale=2; $(paste -sd+ India.txt | bc)/$(wc -l < India.txt)" | bc >> ws4_means.txt
+bash-4.4$ cat ws4_means.txt
+United States: 23416932.90
+India: 25596000.00
+bash-4.4$ exit
+exit
+
+Script done on 2024-04-08 21:52:44-04:00
+
