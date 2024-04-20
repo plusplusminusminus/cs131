@@ -1,0 +1,31 @@
+TASK 1:
+$ cat last.fake | wc -l
+$ sed -n '/sp24/p' last.fake > lastsp24.fake
+$ wc -l < lastsp24.fake
+
+TASK 2:
+$ grep Sun lastsp24.fake | \
+  awk '{print $1}' | \
+  sort | uniq | \
+  awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}'
+
+
+TASK 3:
+$ awk '$7 >= "23:00" || $7 <= "4:00" {print $1}' lastsp24.fake | \
+  sort | uniq | \
+  awk ' BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+
+TASK 4:
+$ awk '$7 >= "05:00" || $7 <= "09:00" {print $1}' lastsp24.fake | \
+  sort | uniq | \
+  awk 'BEGIN {print "Early Birds List:"} {print} END { print "Early Birds are dope. Please ensure you get enough sleep though."}'
+
+TASK 5:
+$ sed -n '/^t/p' last.fake | awk '{print $1}' | sort | uniq
+
+TASK 6:
+$ awk 'BEGIN { FS=":" } $1 ~ /^a/ && $3 % 2 == 0 {print}' passwd.fake | sort | uniq
+
+TASK 7:
+$ sed 's/[a-zA-Z0-9]//g' passwd.fake | sort -u
+
