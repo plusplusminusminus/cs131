@@ -1,0 +1,77 @@
+Metadata of Causes of Deaths Dataset
+
+Number of entries: 6120
+
+Features: Country/Territory, Code, Year, Meningitis, Alzheimer's Disease and Other Dementias, Parkinson's Disease, Nutritional Deficiencies, Malaria, Drowning, Interpersonal Violence, Maternal Disorders, HIV/AIDS, Drug Use Disorders, Tuberculosis, Cardiovascular Diseases, Lower Respiratory Infections, Neonatal Disorders, Alcohol Use Disorders, Self-harm, Exposure to Forces of Nature, Diarrheal Diseases, Environmental Heat and Cold Exposure, Neoplasms, Conflict and Terrorism, Diabetes Mellitus, Chronic Kidney Disease, Poisonings, Protein-Energy Malnutrition, Road Injuries, Chronic Respiratory Diseases, Cirrhosis and Other Chronic Liver Diseases, Digestive Diseases, Fire, Heat, and Hot Substances, Acute Hepatitis
+
+
+Value Ranges:
+Column, Min, Max
+Year, 1990, 2019
+Meningitis, 0, 98358
+Alzheimer's Disease and Other Dementias, 0, 320715
+Parkinson's Disease, 0, 76990
+Nutritional Deficiencies, 0, 268223
+Malaria, 0, 280604
+Drowning, 0, 153773
+Interpersonal Violence, 0, 69640
+Maternal Disorders, 0, 107929
+HIV/AIDS, 0, 305491
+Drug Use Disorders, 0, 65717
+Tuberculosis, 0, 657515
+Cardiovascular Diseases, 4, 4584273
+Lower Respiratory Infections, 0, 690913
+Neonatal Disorders, 0, 852761
+Alcohol Use Disorders, 0, 55200
+Self-harm, 0, 220357
+Exposure to Forces of Nature, 0, 222641
+Diarrheal Diseases, 0, 1119477
+Environmental Heat and Cold Exposure, 0, 29048
+Neoplasms, 1, 2716551
+Conflict and Terrorism, 0, 503532
+Diabetes Mellitus, 1, 273089
+Chronic Kidney Disease, 0, 222922
+Poisonings, 0, 30883
+Protein-Energy Malnutrition, 0, 202241
+Road Injuries, 0, 329237
+Chronic Respiratory Diseases, 1, 1366039
+Cirrhosis and Other Chronic Liver Diseases, 0, 270037
+Digestive Diseases, 0, 464914
+"Fire, Heat, and Hot Substances", 0, 25876
+Acute Hepatitis, 0, 64305
+
+Data Types:
+Country/Territory: String
+Code: String
+Year: Int
+Meningitis: Int
+Alzheimer's Disease and Other Dementias: Int
+Parkinson's Disease: Int
+Nutritional Deficiencies: Int
+Malaria: Int
+Drowning: Int
+Interpersonal Violence: Int
+Maternal Disorders: Int
+HIV/AIDS: Int
+Drug Use Disorders: Int
+Tuberculosis: Int
+Cardiovascular Diseases: Int
+Lower Respiratory Infections: Int
+Neonatal Disorders: Int
+Alcohol Use Disorders: Int
+Self-harm: Int
+Exposure to Forces of Nature: Int
+Diarrheal Diseases: Int
+Environmental Heat and Cold Exposure: Int
+Neoplasms: Int
+Conflict and Terrorism: Int
+Diabetes Mellitus: Int
+Chronic Kidney Disease: Int
+Poisonings: Int
+Protein-Energy Malnutrition: Int
+Road Injuries: Int
+Chronic Respiratory Diseases: Int
+Cirrhosis and Other Chronic Liver Diseases: Int
+Digestive Diseases: Int
+"Fire, Heat, and Hot Substances": Int
+Acute Hepatitis: Int
