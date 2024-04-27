@@ -1,0 +1,12 @@
+    1  ls
+    2  mkdir Worksheet5
+    3  cd Worksheet5
+    4  cp ../'Global YouTube Statistics.csv' .
+    5  vi script.sh
+    6  chmod u+x script.sh
+    7  ./script.sh
+    8  ls
+    9  wc -l United\ States/*.txt > ws5.txt
+   10  ls
+   11  cat ws5.txt
+   12  history > cmds.log
