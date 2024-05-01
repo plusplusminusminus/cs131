@@ -1,0 +1,1007 @@
+    3  mkdir Subscribers
+    4  mkdir Subscribers/United_States.txt
+    5  mkdir Subscribers/India.txt
+    6  cd Subscribers/
+    7  ls
+    8  cd ~/Worksheet4/
+    9  cut -d',' -f 3,8 ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+   10  cut -d',' -f 3,8 ~/Worksheet2/Global\ YouTube\ Statistics.csv > Subscribers/United_States.txt/
+   11  cut -d',' -f 3,8 ~/Worksheet2/Global\ YouTube\ Statistics.csv > Subscribers/United_States.txt
+   12  cd Subscribers/
+   13  rmdir United_States.txt India.txt/
+   14  ls
+   15  touch United_States.txt
+   16  cd ~/Worksheet4
+   17  cut -d',' -f 3,8 ~/Worksheet2/Global\ YouTube\ Statistics.csv > Subscribers/United_States.txt
+   18  clear
+   19  cd Subscribers/
+   20  ls
+   21  vi United_States.txt 
+   22  man cut
+   23  grep 'United States' United_States.txt > test.txt
+   24  vi test.txt 
+   25  cut -d',' -f 3,8 ~/Worksheet2/Global\ YouTube\ Statistics.csv > test.txt
+   26  vi test.txt 
+   27  grep 'United States' test.txt > United_States.txt 
+   28  cut -d',' -f 1 United_States.txt 
+   29  vi United_States.txt 
+   30  cut -d',' -f 1 United_States.txt > United_States.txt 
+   31  vi United_States.txt 
+   32  cut -d',' -f 3,8 ~/Worksheet2/Global\ YouTube\ Statistics.csv > United_States.txt 
+   33  grep 'United States' United_States.txt > test.txt 
+   34  cut -d',' -f 1 test.txt > United_States.txt 
+   35  vi United_States.txt 
+   36  $ sum=$(awk '{print $2}' file.txt | paste -sd+ | bc); echo "$sum / $(cat United_States.txt | wc -l)" | bc -l
+   37  $ sum=$(awk '{print $2}' United_States.txt | paste -sd+ | bc); echo "$sum / $(cat United_States.txt | wc -l)" | bc -l
+   38  sum=$(awk '{print $2}' United_States.txt | paste -sd+ | bc); echo "$sum / $(cat United_States.txt | wc -l)" | bc -l
+   39  sum=$(awk '{print $2}' United_States.txt | paste -sd+ | bc)
+   40  awk '{ total += $2; count++ } END { print total/count }' United_States.txt 
+   41  touch file.txt
+   42  vi file.txt 
+   43  awk '{ total += $2; count++ } END { print total/count }' file.txt 
+   44  count=0;
+   45  total=0; 
+   46  for i in $( awk '{ print $2; }' file.txt );    do       total=$(echo $total+$i | bc );      ((count++));    done
+   47  echo "scale=2; $total / $count" | bc
+   48  count=0; total=0; for i in $( awk '{ print $2; }' file.txt );do total=$(echo $total+$i | bc ); ((count++)); done; echo "scale=2; $total / $count" | bc
+   49  count=0; total=0; for i in $( awk '{ print $2; }' file.txt ); do total=$(echo $total+$i | bc ); ((count++)); done; echo "scale=2; $total / $count" | bc
+   50  count=0; total=0; for i in $( awk '{ print }' file.txt ); do total=$(echo $total+$i | bc ); ((count++)); done; echo "scale=2; $total / $count" | bc
+   51  sum=$(awk '{print}' file.txt | paste -sd+ | bc); echo "$sum / $(cat file.txt | wc -l)" | bc -l
+   52  sum=$(awk '{print}' United_States.txt | paste -sd+ | bc); echo "$sum / $(cat United_States.txt | wc -l)" | bc -l
+   53  clear
+   54  ls
+   55  rm file.txt test.txt United_States.txt 
+   56  cd ~/Worksheet4/
+   57  ls
+   58  rmdir Subscribers/
+   59  ls
+   60  cd
+   61  alias l='ls -ltr'
+   62  alias w='ls -l|wc'
+   63  l
+   64  w
+   65  mkdir Subscribers
+   66  touch Subscribers/United_States.txt
+   67  touch Subscribers/India.txt
+   68  cd Subscribers/
+   69  cut -d',' -f 3,8 ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+   70  cut -d',' -f 3,8 ~/Worksheet2/Global\ YouTube\ Statistics.csv > United_States.txt 
+   71  cd Worksheet4/
+   72  clear
+   73  script ws4.txt
+   74  ls
+   75  cd Subscribers/
+   76  ls
+   77  rm India.txt United_States.txt 
+   78  cd ~/Worksheet4
+   79  ls
+   80  rm ws4.txt 
+   81  rmdir Subscribers/
+   82  ls
+   83  cd
+   84  clear
+   85  cd Worksheet4/
+   86  clear
+   87  script ws4.txt
+   88  rm ws4.txt 
+   89  alias l='ls -ltr'
+   90  alias w='ls -l|wc'
+   91  l
+   92  w
+   93  mkdir Subscribers
+   94  touch Subscribers/United_States.txt
+   95  touch Subscribers/India.txt
+   96  cd Subscribers/
+   97  cut -d',' -f 3,8 ~/Worksheet2/Global\ YouTube\ Statistics.csv > United_States.txt 
+   98  vi United_States.txt 
+   99  grep 'United_States' United_States.txt > temp.txt
+  100  vi temp.txt 
+  101  grep 'United States' United_States.txt > temp.txt
+  102  vi temp.txt 
+  103  grep 'India' United_States.txt > India.txt 
+  104  ls
+  105  vi India.txt 
+  106  cut -d',' -f 1 temp.txt > United_States.txt 
+  107  vi United_States.txt 
+  108  cat India.txt > temp.txt 
+  109  vi temp.txt 
+  110  cut -d',' -f 1 temp.txt > India.txt 
+  111  vi India.txt 
+  112  sum=$(awk '{print}' United_States.txt | paste -sd+ | bc); echo "$sum / $(cat United_States.txt | wc -l)" | bc -l
+  113  sum=$(awk '{print}' India.txt | paste -sd+ | bc); echo "$sum / $(cat India.txt | wc -l)" | bc -l
+  114  cd Worksheet4/
+  115  clear
+  116  script ws4.txt
+  117  pwd
+  118  ls
+  119  vi ws4.txt 
+  120  cd
+  121  git add Worksheet4/
+  122  git status
+  123  git commit -m "add Worksheet4"
+  124  git push origin main
+  125  mkdir scripts
+  126  cd scripts/
+  127  vi script.sh
+  128  ./script.sh
+  129  chmod +x script.sh 
+  130  ./script.sh
+  131  bash script.sh 
+  132  vi script.sh 
+  133  whereis bash
+  134  ./script.sh 
+  135  vi script.sh 
+  136  bash script.sh 
+  137  clear
+  138  echo 'Hello whats good in the hood' | sed 's/hood/neighborhood/'
+  139  ls
+  140  cd scripts/
+  141  vi file.txt
+  142  sed 's/apple/apples/' file.txt 
+  143  sed 's/apple/apples/'
+  144  cd scripts/
+  145  ls
+  146  sed '1,3s/apple/apples/' file.txt 
+  147  echo hi
+  148  echo testing tmux
+  149  tmux ls
+  150  tmux kill-session -t 0
+  151  ls
+  152  tmux ls
+  153  tmux kill-session -t test2
+  154  tmux new-session test2
+  155  tmux new-session -s test2
+  156  tmux ls
+  157  tmux
+  158  tmux ls
+  159  echo testing multiple windows
+  160  &
+  161  tmux kill-session
+  162  ls
+  163  cd scripts/
+  164  ls
+  165  cat file.txt 
+  166  touch test.txt
+  167  awk '/manager/ { print }' test.txt 
+  168  cat test.txt 
+  169  awk 'manager { print }' test.txt 
+  170  cat test.txt 
+  171  awk '/manager { print }' test.txt 
+  172  awk '/manager/ { print }' emp.lst
+  173  touch emp.lst
+  174  awk '/manager/ { print }' emp.lst
+  175  cat emp.lst 
+  176  vi emp.lst 
+  177  clear
+  178  awk '1 { print }' file.txt 
+  179  awk '/apple/' file.txt 
+  180  vi file.txt 
+  181  awk ' { print $1 }' file.txt 
+  182  awk ' { print $1 $2 }' file.txt 
+  183  awk ' { print $1, $2 }' file.txt 
+  184  awk ' { print $1 ; $2 }' file.txt 
+  185  awk ' { print $1 ; print $2 }' file.txt 
+  186  clear
+  187  awk -F: '{ print $1:$2 }' file.txt 
+  188  clear
+  189  cd
+  190  ls
+  191  vi spotify-2023.csv 
+  192  awk '/New Jeans/' spotify-2023.csv 
+  193  awk '/NewJeans/' spotify-2023.csv 
+  194  cd spotify/
+  195  ls
+  196  cd
+  197  mv spotify-2023.csv spotify
+  198  ls
+  199  cd spotify/
+  200  ls
+  201  clear
+  202  awk 'i<4 {print; i++}' spotify-2023.csv 
+  203  awk 'BEGIN {print "NEWJEANS MUSIC BABY:"}/[Nn]ew[Jj]eans/' spotify-2023.csv 
+  204  awk '{print "Line " NR ": "}' spotify-2023.csv 
+  205  awk '{print "Line " NR ": " $0}' spotify-2023.csv 
+  206  clear
+  207  awk 'END {print "Total lines: " NR}' spotify-2023.csv 
+  208  awk 'BEGIN {RS="x"} {print $0}' spotify-2023.csv 
+  209  awk 'BEGIN {ORS="x"} {print $0}' spotify-2023.csv 
+  210  clear
+  211  awk 'BEGIN {FS=" "} {print $0}' spotify-2023.csv 
+  212  clear
+  213  awk '/Swift/ && /Weeknd/' spotify-2023.csv 
+  214  awk '/Swift/' spotify-2023.csv 
+  215  awk '/Swift/ && /Weekend/' spotify-2023.csv 
+  216  awk '/Swift/ || /Weekend/' spotify-2023.csv 
+  217  ckear
+  218  clear
+  219  cat awkscr_for
+  220  man awk
+  221  sudo yum install tmux
+  222  tmux
+  223  tmux new-session -s test
+  224  cd ~/scripts/
+  225  ls
+  226  clear
+  227  cat file.txt 
+  228  sed 's/black/lavander/' file.txt 
+  229  cat file.txt 
+  230  sed -i 's/black/grey/' file.txt 
+  231  cat file.txt 
+  232  echo hi
+  233  tmux attach -t test
+  234  cd scripts/
+  235  ls
+  236  sh script.sh 
+  237  cat emp.lst 
+  238  cat file.txt 
+  239  cat test.txt 
+  240  rm emp.lst test.txt 
+  241  ls
+  242  head -5 ~/spotify/spotify-2023.csv 
+  243  vi ~/spotify/spotify-2023.csv 
+  244  vi getLine.sh
+  245  vi getLine.sh 
+  246  bash getLine.sh 5 ~/spotify/spotify-2023.csv 
+  247  sh getLine.sh 7 ~/spotify/spotify-2023.csv 
+  248  clear
+  249  read a b
+  250  echo $a
+  251  echo $b
+  252  clear
+  253  vi readProgram.sh
+  254  sh readProgram.sh 
+  255  test 1 -gt 3
+  256  echo $?
+  257  cd scripts/
+  258  ls
+  259  vi ifElseProgram.sh
+  260  sh ifElseProgram.sh 
+  261  vi ifElseProgram.sh 
+  262  cat readProgram.sh 
+  263  vi ifElseProgram.sh 
+  264  sh ifElseProgram.sh 
+  265  vi ifElseProgram.sh 
+  266  sh ifElseProgram.sh 
+  267  who
+  268  clear
+  269  vi forLoopProgram.sh
+  270  sh forLoopProgram.sh 
+  271  vi forLoopProgram.sh 
+  272  sh forLoopProgram.sh 
+  273  vi forLoopProgram.sh 
+  274  sh forLoopProgram.sh 
+  275  cat forLoopProgram.sh 
+  276  vi fileattribs.sh
+  277  sh fileattribs.sh 
+  278  vi fileattribs.sh 
+  279  sh fileattribs.sh 
+  280  vi file
+  281  ls
+  282  vi fileattribs.sh 
+  283  sh fileattribs.sh 
+  284  clear
+  285  vi fileattribs.sh 
+  286  ls -ltr
+  287  ls
+  288  pwd
+  289  mkdir Assignment3
+  290  cd Assignment3
+  291  ls
+  292  clear
+  293  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/last.fake
+  294  ls
+  295  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/passwd.fake
+  296  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/awksp24/ps.fake
+  297  ls
+  298  cat last.fake 
+  299  cat passwd.fake 
+  300  ls
+  301  cat ps.fake 
+  302  clear
+  303  man last
+  304  last
+  305  clear
+  306  awk '/sp24/ {print}' last.fake > lastsp24.fake
+  307  vi lastsp24.fake 
+  308  wc -l last.fake > Assignment3.txt
+  309  wc -l lastsp24.fake >> Assignment3.txt 
+  310  vi Assignment3.txt 
+  311  vi lastsp24.fake 
+  312  vi sundayWorkers.fake 
+  313  awk '{print $1}' sundayWorkers.fake 
+  314  awk '{print $1}' sundayWorkers.fake > temp.txt
+  315  cat temp.txt > sundayWorkers.fake 
+  316  vi sundayWorkers.fake 
+  317  uniq temp.txt 
+  318  uniq temp.txt > sundayWorkers.fake 
+  319  vi sundayWorkers.fake 
+  320  awk 'BEGIN {print "hello"} {print}' sundayWorkers.fake 
+  321  awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work}' sundayWorkers.fake 
+  322  awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}' sundayWorkers.fake 
+  323  awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}' sundayWorkers.fake > temp.txt 
+  324  cat temp.txt > sundayWorkers.fake 
+  325  vi sundayWorkers.fake 
+  326  cat sundayWorkers.fake >> Assignment3.txt 
+  327  vi Assignment3.txt 
+  328  ls
+  329  clear
+  330  vi lastsp24.fake 
+  331  awk '{print $7 $9}' lastsp24.fake 
+  332  awk '{print $7}' lastsp24.fake 
+  333  vi lastsp24.fake 
+  334  clear
+  335  awk '$8 >= "23:00" lastsp
+  336  dsadad
+  337  ls
+  338  cd Assignment3
+  339  clear
+  340  history > cmds.log
+  341  vi cmds.log 
+  342  awk '$8 >= "23:00" {print}' lastsp24.fake 
+  343  vi lastsp24.fake 
+  344  awk '$8 >= 23:00 {print}' lastsp24.fake 
+  345  awk '$7 >= "23:00" {print}' lastsp24.fake 
+  346  vi lastsp24.fake 
+  347  grep 'george' lastsp24.fake 
+  348  clear
+  349  awk '$7 >= "23:00" {print}' lastsp24.fake 
+  350  awk '$6 >= "23:00" {print}' lastsp24.fake 
+  351  awk '$7 >= "23:00" {print}' lastsp24.fake 
+  352  clear
+  353  awk '$7 >= "23:00" {print}' lastsp24.fake 
+  354  awk '$8 >= "23:00" {print}' lastsp24.fake 
+  355  clear
+  356  awk '$7 >= "23:00" && $9 <= "04:00" {print}' lastsp24.fake 
+  357  awk '$7 >= "23:00" && $9 <= "04:00" {print}' lastsp24.fake | uniq 
+  358  awk '$7 >= "23:00" && $9 <= "04:00" {print}' lastsp24.fake | uniq | awk '{print $1}'
+  359  awk '$7 >= "23:00" && $9 <= "04:00" {print}' lastsp24.fake | uniq | awk '{print $1}' > nightOwls.fake
+  360  vi nightOwls.fake 
+  361  cat nightOwls.fake >> Assignment3.txt 
+  362  vi Assignment3.txt 
+  363  awk '$7 >= "23:00" && $9 <= "04:00" {print}' lastsp24.fake | uniq | awk 'BEGIN {print "Night Owls List:" {print $1} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+  364  awk '$7 >= "23:00" && $9 <= "04:00" {print}' lastsp24.fake | uniq | awk 'BEGIN {print "Night Owls List:"} {print $1} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+  365  awk '$7 >= "23:00" && $9 <= "04:00" {print}' lastsp24.fake | uniq | awk 'BEGIN {print "Night Owls List:"} {print $1} END {print "Night Owls are dope. Please ensure you get enough sleep though."}' > nightOwls.fake 
+  366  cat nightOwls.fake >> Assignment3.txt 
+  367  vi Assignment3.txt 
+  368  clear
+  369  history > cmds.log 
+  370  vi cmds.log 
+  371  clear
+  372  awk '$7 >= "05:00" && $9 <= "09:00" {print} lasasdasd
+  373  cd Assignment3/
+  374  clear
+  375  awk '$7 >= "05:00" && $9 <= "09:00" {print}' lastsp24.fake 
+  376  vi Assignment3.txt 
+  377  clear
+  378  awk '$7 >= "05:00" && $7 < "09:00" &&  $9 <= "09:00" {print}' lastsp24.fake 
+  379  awk '$7 >= "05:00" && $7 < "09:00" &&  $9 <= "09:00" {print}' lastsp24.fake | uniq
+  380  awk '$7 >= "23:00" && $9 <= "04:00" {print}' lastsp24.fake | uniq | awk '{print $1}' > nightOwls.fake
+  381  awk '$7 >= "23:00" && $9 <= "04:00" {print}' lastsp24.fake | uniq | awk '{print $1}'
+  382  awk '$7 >= "23:00" && $9 <= "04:00" {print $1} | uniq 
+  383  las
+  384  cd Assignment3
+  385  clear
+  386  cd Assignment3
+  387  clear
+  388  awk '$7 >= "23:00" && $9 <= "04:00" {print $1}' lastsp24.fake | uniq
+  389  awk '$7 >= "23:00" && $9 <= "04:00" {print $1}' lastsp24.fake 
+  390  awk '$7 >= "23:00" && $9 <= "04:00" {print $1}' lastsp24.fake | sort | uniq
+  391  vi Assignment3.txt 
+  392  clear
+  393  ls
+  394  rm '=' 
+  395  rm temp.txt 
+  396  ls
+  397  clear
+  398  vi Assignment3.txt 
+  399  grep 'Sun' lastsp24.fake > sundayWorkers.fake
+  400  grep 'Sun' lastsp24.fake 
+  401  grep 'Sun' lastsp24.fake | awk {print $1}
+  402  grep 'Sun' lastsp24.fake | awk '{print $1}'
+  403  grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq
+  404  grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}' 
+  405  grep 'Sun' lastsp24.fake | awk '{print $1}' | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}' > sundayWorkers.fake 
+  406  vi sundayWorkers.fake 
+  407  cat sundayWorkers.fake >> Assignment3.txt 
+  408  vi Assignment3.txt 
+  409  clear
+  410  awk '$7 >= "23:00" && $9 <= "04:00" {print}' lastsp24.fake 
+  411  awk '$7 >= "23:00" && $9 <= "04:00" {print $1}' lastsp24.fake 
+  412  awk '$7 >= "23:00" && $9 <= "04:00" {print $1}' lastsp24.fake | sort | uniq
+  413  awk '$7 >= "23:00" && $9 <= "04:00" {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
+  414  awk '$7 >= "23:00" && $9 <= "04:00" {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}' > nightOwls.fake 
+  415  vi nightOwls.fake 
+  416  cat nightOwls.fake >> Assignment3.txt 
+  417  vi Assignment3.txt 
+  418  vi cmds.log 
+  419  history > cmds.log 
+  420  vi cmds.log 
+  421  clear
+  422  awk '$7 >= "05:00" && $7 < "09:00" && $9 <= "09:00" {print}' lastsp24.fake 
+  423  awk '$7 >= "05:00" && $7 < "09:00" && $9 <= "09:00" {print $1}' lastsp24.fake 
+  424  awk '$7 >= "05:00" && $7 < "09:00" && $9 <= "09:00" {print $1}' lastsp24.fake | sort | uniq
+  425  awk '$7 >= "05:00" && $7 < "09:00" && $9 <= "09:00" {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Bird List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}'
+  426  awk '$7 >= "05:00" && $7 < "09:00" && $9 <= "09:00" {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Bird List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}' > earlyBirds.fake
+  427  cat earlyBirds.fake >> Assignment3.txt 
+  428  vi Assignment3.txt 
+  429  history > cmds.log 
+  430  clear
+  431  awk '{print $1}' lastsp24.fake | grep '^t'
+  432  awk '{print $1}' lastsp24.fake | grep '^t' | sort | uniq
+  433  awk '{print $1}' lastsp24.fake | grep '^t' | sort | uniq > tNames.fake
+  434  cat tNames.fake >> Assignment3.txt 
+  435  vi Assignment3.txt 
+  436  clear
+  437  vi passwd.fake 
+  438  grep '^a' passwd.fake 
+  439  cd Assignment3
+  440  clear
+  441  ls
+  442  awk -F: '{print}' passwd.fake 
+  443  awk -F: '{print $1}' passwd.fake 
+  444  awk -F: '$1 ~ /^a/ {print}' passwd.fake
+  445  awk -F: '$1 ~ /^a/ && $3 % 2 == 0 {print}' passwd.fake
+  446  awk -F: '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake
+  447  vi Assignment3.txt 
+  448  awk -F: '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake | sort | uniq
+  449  awk -F: '$1 ~ /^a/ && $3 % 2 == 0 {print $1}' passwd.fake | sort | uniq > aNamesDivByFour.fake
+  450  cat aNamesDivByFour.fake >> Assignment3.txt 
+  451  vi Assignment3.txt 
+  452  clear
+  453  sed 's/[a-zA-Z0-9]/g' passwd.fake 
+  454  sed 's/[a-zA-Z0-9]//g' passwd.fake 
+  455  sed 's/[a-zA-Z0-9]//g' passwd.fake | sort u
+  456  sed 's/[a-zA-Z0-9]//g' passwd.fake | sort -u
+  457  sed 's/[a-zA-Z0-9]//g' passwd.fake | sort -u > distinctLines.fake
+  458  cat distinctLines.fake >> Assignment3.txt 
+  459  vi Assignment3.txt 
+  460  clear
+  461  history > cmds.log 
+  462  vi cmds.log 
+  463  cd
+  464  git add Assignment3/
+  465  git status
+  466  git commit -m "push Assignment 3"
+  467  git push origin main
+  468  ls
+  469  mkdir Worksheet5
+  470  cd Worksheet
+  471  cd Worksheet5
+  472  vi ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  473  cd
+  474  cd scripts/
+  475  ls
+  476  cat readProgram.sh 
+  477  cat getLine.sh 
+  478  getLine -1 ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  479  sh getLine.sh -1 ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  480  sh getLine.sh -2 ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  481  sh getLine.sh 1 ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  482  sh getLine.sh 1 ~/Worksheet2/Global\YouTube\Statistics.csv 
+  483  vi ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  484  cd ~/Worksheet5
+  485  clear
+  486  vi UnitedStatesSort.sh
+  487  vi file.txt
+  488  sh UnitedStatesSort.sh file.txt 
+  489  sh UnitedStatesSort.sh ~/Worksheet2/Global\ YouTube\ Statistics.csv 
+  490  wget https://raw.githubusercontent.com/khanchandaniashish/CS131/main/Global%20YouTube%20Statistics.csv
+  491  ls
+  492  sh UnitedStatesSort.sh 'Global YouTube Statistics.csv' 
+  493  cat 'Global YouTube Statistics.csv' 
+  494  clear
+  495  ls
+  496  cat 'Global YouTube Statistics.csv' > Statistics.csv
+  497  ls
+  498  vi Statistics.csv 
+  499  sh UnitedStatesSort.sh Statistics.csv 
+  500  clear
+  501  ls
+  502  rm 'Global YouTube Statistics.csv' 
+  503  ls
+  504  touch ws5.txt
+  505  ls
+  506  vi UnitedStatesSort.sh 
+  507  vi ~/scripts/readProgram.sh 
+  508  vi UnitedStatesSort.sh 
+  509  vi ~/scripts/readProgram.sh 
+  510  vi UnitedStatesSort.sh 
+  511  sh UnitedStatesSort.sh 
+  512  clear
+  513  vi UnitedStatesSort.sh 
+  514  sh UnitedStatesSort.sh 
+  515  clear
+  516  vi UnitedStatesSort.sh 
+  517  sh UnitedStatesSort.sh 
+  518  vi UnitedStatesSort.sh 
+  519  clear
+  520  sh UnitedStatesSort.sh 
+  521  vi UnitedStatesSort.sh 
+  522  sh UnitedStatesSort.sh 
+  523  vi UnitedStatesSort.sh 
+  524  sh UnitedStatesSort.sh file.txt 
+  525  vi UnitedStatesSort.sh 
+  526  sh UnitedStatesSort.sh file.txt 
+  527  vi file.txt 
+  528  sh UnitedStatesSort.sh file.txt 
+  529  awk '{print $3}' file.txt 
+  530  awk -F, '{print $3}' file.txt 
+  531  vi UnitedStatesSort.sh 
+  532  sh UnitedStatesSort.sh file.txt 
+  533  awk -F, '{print $8}' file.txt 
+  534  vi UnitedStatesSort.sh 
+  535  sh UnitedStatesSort.sh file.txt 
+  536  vi UnitedStatesSort.sh 
+  537  sh UnitedStatesSort.sh file.txt 
+  538  vi UnitedStatesSort.sh 
+  539  sh UnitedStatesSort.sh file.txt 
+  540  vi UnitedStatesSort.sh 
+  541  sh UnitedStatesSort.sh file.txt 
+  542  vi UnitedStatesSort.sh 
+  543  sh UnitedStatesSort.sh file.txt 
+  544  awk '{print $8}' file.txt 
+  545  vi UnitedStatesSort.sh 
+  546  sh UnitedStatesSort.sh file.txt 
+  547  awk 'BEGIN -F, {print $8}' file.txt 
+  548  awk -F, '{print $8}' file.txt 
+  549  sh UnitedStatesSort.sh Statistics.csv 
+  550  vi UnitedStatesSort.sh 
+  551  sh UnitedStatesSort.sh Statistics.csv 
+  552  clear
+  553  vi UnitedStatesSort.sh 
+  554  sh UnitedStatesSort.sh Statistics.csv 
+  555  vi UnitedStatesSort.sh 
+  556  sh UnitedStatesSort.sh Statistics.csv 
+  557  vi UnitedStatesSort.sh 
+  558  sh UnitedStatesSort.sh Statistics.csv 
+  559  vi UnitedStatesSort.sh 
+  560  sh UnitedStatesSort.sh Statistics.csv 
+  561  vi UnitedStatesSort.sh 
+  562  sh UnitedStatesSort.sh Statistics.csv 
+  563  vi UnitedStatesSort.sh 
+  564  cd
+  565  cd Worksheet5
+  566  vi ~/scripts/ifElseProgram.sh 
+  567  vi UnitedStatesSort.sh 
+  568  sh UnitedStatesSort.sh Statistics.csv 
+  569  vi ~/scripts/ifElseProgram.sh 
+  570  vi UnitedStatesSort.sh 
+  571  sh UnitedStatesSort.sh Statistics.csv 
+  572  vi UnitedStatesSort.sh 
+  573  sh UnitedStatesSort.sh Statistics.csv 
+  574  vi UnitedStatesSort.sh 
+  575  sh UnitedStatesSort.sh Statistics.csv 
+  576  ./UnitedStatesSort.sh Statistics.csv 
+  577  chmod -rwx UnitedStatesSort.sh 
+  578  ./UnitedStatesSort.sh Statistics.csv 
+  579  bash UnitedStatesSort.sh Statistics.csv 
+  580  sh UnitedStatesSort.sh Statistics.csv 
+  581  clear
+  582  sh UnitedStatesSort.sh file.txt 
+  583  vi SortCategories.sh
+  584  sh SortCategories.sh 
+  585  ./SortCategories.sh
+  586  sh SortCategories.sh 
+  587  ls-latr
+  588  ls -latr
+  589  chmod -rwx UnitedStatesSort.sh 
+  590  ls -latr
+  591  chmod -u -rwx UnitedStatesSort.sh 
+  592  ls -latr
+  593  chmod +rwx UnitedStatesSort.sh 
+  594  ls -latr
+  595  clear
+  596  ls
+  597  rm SortCategories.sh 
+  598  ./UnitedStatesSort.sh Statistics.csv 
+  599  sh UnitedStatesSort.sh Statistics.csv 
+  600  vi UnitedStatesSort.sh 
+  601  sh UnitedStatesSort.sh Statistics.csv 
+  602  vi UnitedStatesSort.sh 
+  603  sh UnitedStatesSort.sh Statistics.csv 
+  604  vi UnitedStatesSort.sh 
+  605  sh UnitedStatesSort.sh Statistics.csv 
+  606  vi UnitedStatesSort.sh 
+  607  sh UnitedStatesSort.sh Statistics.csv 
+  608  vi UnitedStatesSort.sh 
+  609  sh UnitedStatesSort.sh Statistics.csv 
+  610  vi UnitedStatesSort.sh 
+  611  sh UnitedStatesSort.sh Statistics.csv 
+  612  cd Worksheet5
+  613  ls
+  614  vi UnitedStatesSort.sh 
+  615  sh UnitedStatesSort.sh Statistics.csv 
+  616  vi UnitedStatesSort.sh 
+  617  sh UnitedStatesSort.sh Statistics.csv 
+  618  vi UnitedStatesSort.sh 
+  619  sh UnitedStatesSort.sh Statistics.csv 
+  620  vi UnitedStatesSort.sh 
+  621  sh UnitedStatesSort.sh Statistics.csv 
+  622  vi UnitedStatesSort.sh 
+  623  sh UnitedStatesSort.sh Statistics.csv 
+  624  vi UnitedStatesSort.sh 
+  625  sh UnitedStatesSort.sh Statistics.csv 
+  626  vi UnitedStatesSort.sh 
+  627  sh UnitedStatesSort.sh Statistics.csv 
+  628  vi UnitedStatesSort.sh 
+  629  sh UnitedStatesSort.sh Statistics.csv 
+  630  vi UnitedStatesSort.sh 
+  631  sh UnitedStatesSort.sh Statistics.csv 
+  632  vi UnitedStatesSort.sh 
+  633  sh UnitedStatesSort.sh Statistics.csv 
+  634  vi UnitedStatesSort.sh 
+  635  sh UnitedStatesSort.sh Statistics.csv 
+  636  clear
+  637  vi UnitedStatesSort.sh 
+  638  sh UnitedStatesSort.sh Statistics.csv 
+  639  man set
+  640  vi UnitedStatesSort.sh 
+  641  sh UnitedStatesSort.sh Statistics.csv 
+  642  clear
+  643  vi UnitedStatesSort.sh 
+  644  sh UnitedStatesSort.sh Statistics.csv 
+  645  vi UnitedStatesSort.sh 
+  646  sh UnitedStatesSort.sh Statistics.csv 
+  647  vi UnitedStatesSort.sh 
+  648  sh UnitedStatesSort.sh Statistics.csv 
+  649  vi test.sh
+  650  sh test.sh 
+  651  vi UnitedStatesSort.sh 
+  652  sh UnitedStatesSort.sh Statistics.csv 
+  653  clear
+  654  vi UnitedStatesSort.sh 
+  655  sh UnitedStatesSort.sh Statistics.csv 
+  656  vi UnitedStatesSort.sh 
+  657  sh UnitedStatesSort.sh Statistics.csv 
+  658  vi UnitedStatesSort.sh 
+  659  vi un
+  660  vi UnitedStatesSort.sh 
+  661  rm UnitedStatesSort.sh 
+  662  vi UnitedStatesSort.sh
+  663  ls
+  664  vi UnitedStatesSort.sh
+  665  vi UnitedStatesSort.sh 
+  666  sh UnitedStatesSort.sh Statistics.csv 
+  667  vi UnitedStatesSort.sh 
+  668  cat UnitedStatesSort.sh 
+  669  vi test.sh 
+  670  sh test.sh Statistics.csv 
+  671  clear
+  672  vi test.sh 
+  673  sh test.sh Statistics.csv 
+  674  clear
+  675  vi test.sh 
+  676  sh test.sh Statistics.csv 
+  677  vi test.sh 
+  678  sh test.sh Statistics.csv 
+  679  vi test.sh 
+  680  sh test.sh Statistics.csv 
+  681  clear
+  682  vi test.sh 
+  683  sh test.sh Statistics.csv 
+  684  vi test.sh 
+  685  sh test.sh Statistics.csv 
+  686  vi test.sh 
+  687  sh test.sh Statistics.csv 
+  688  vi test.sh 
+  689  sh test.sh Statistics.csv 
+  690  vi test.sh 
+  691  sh test.sh Statistics.csv 
+  692  vi test.sh 
+  693  sh test.sh Statistics.csv 
+  694  vi test.sh 
+  695  man read
+  696  vi tes
+  697  vi test.sh 
+  698  sh test.sh Statistics.csv 
+  699  vi test.sh 
+  700  sh test.sh Statistics.csv 
+  701  vi test.sh 
+  702  sh test.sh Statistics.csv 
+  703  vi test.sh 
+  704  sh test.sh Statistics.csv 
+  705  ls
+  706  mkdir United States
+  707  ls
+  708  rm United States
+  709  rmdir United States
+  710  ls
+  711  mkdir UnitedStates
+  712  ls
+  713  vi test.sh 
+  714  sh test.sh Statistics.csv 
+  715  cd UnitedStates/
+  716  ls
+  717  cd ~/Worksheet5
+  718  vi UnitedStatesEntries.txt 
+  719  vi test.sh 
+  720  rm UnitedStatesEntries.txt 
+  721  sh test.sh Statistics.csv 
+  722  vi UnitedStatesEntries.txt 
+  723  cat test.sh > UnitedStatesSort.sh 
+  724  vi UnitedStates
+  725  vi UnitedStatesSort.sh 
+  726  rm UnitedStatesEntries.txt 
+  727  ls
+  728  vi UnitedStatesSort.sh 
+  729  clear
+  730  sh UnitedStatesSort.sh Statistics.csv 
+  731  cd UnitedStates/
+  732  ls
+  733  vi UnitedStatesEntries.txt 
+  734  cd ~/Worksheet5/
+  735  ls
+  736  clear
+  737  ls
+  738  vi UnitedStatesSort.sh 
+  739  sh UnitedStatesSort.sh Statistics.csv 
+  740  vi UnitedStates
+  741  vi UnitedStatesSort.sh 
+  742  clear
+  743  ls
+  744  rm file.txt test.sh 
+  745  clear
+  746  sh UnitedStatesSort.sh Statistics.csv 
+  747  cd UnitedStates/
+  748  ls
+  749  vi Comedy.txt 
+  750  vi Entertainment.txt 
+  751  vi Gaming.txt 
+  752  vi Music.txt 
+  753  rm UnitedStatesEntries.txt 
+  754  wc -l Music.txt > ~/Worksheet5/ws5.txt 
+  755  wc -l Entertainment.txt > ~/Worksheet5/ws5.txt 
+  756  wc -l Music > ~/Worksheet5/ws5.txt 
+  757  wc -l Music.txt > ~/Worksheet5/ws5.txt 
+  758  wc -l Entertainment.txt >> ~/Worksheet5/ws5.txt 
+  759  wc -l Gaming.txt >> ~/Worksheet5/ws5.txt 
+  760  wc -l Comedy.txt >> ~/Worksheet5/ws5.txt 
+  761  cd ~/Worksheet5/
+  762  vi ws5.txt 
+  763  ls
+  764  cat UnitedStatesSort.sh 
+  765  history > cmds.log
+  766  vi cmds.log 
+  767  cat UnitedStatesSort.sh > script.sh
+  768  vi script.sh 
+  769  cd
+  770  git add Worksheet5/
+  771  git status
+  772  git commit -m 'push worksheet5'
+  773  git push origin main
+  774  ls
+  775  cd Worksheet5
+  776  ls
+  777  vi script.sh 
+  778  cd
+  779  mkdir Inference3
+  780  cd Inference3/
+  781  clear
+
+
+
+
+====================================== CAPSTONE PROJECT WORK =====================================================================
+
+
+  782  vi script.sh
+  783  wget https://raw.githubusercontent.com/plusplusminusminus/cs131/main/MiniProjectGroup5/cause_of_deaths.csv
+  784  ls
+  785  vi cause_of_deaths.csv 
+  786  cat script.sh 
+  787  awk '{print $18}' cause_of_deaths.csv 
+  788  clear
+  789  cut -d "," -f 18 cause_of_deaths.csv 
+  790  clear
+  791  vi script.sh 
+  792  vi ~/Worksheet5/script.sh 
+  793  ci script.sh 
+  794  vi script.sh 
+  795  sh script.sh cause_of_deaths.csv 
+  796  vi script.sh 
+  797  sh script.sh cause_of_deaths.csv 
+  798  vi script.sh 
+  799  sh script.sh cause_of_deaths.csv 
+  800  vi script.sh 
+  801  sh script.sh cause_of_deaths.csv 
+  802  vi script.sh 
+  803  sh script.sh cause_of_deaths.csv 
+  804  vi script.sh 
+  805  clear
+  806  echo `pwd`
+  807  echo `cut -d "," -f 1 cause_of_deaths.csv`
+  808  clear
+  809  sh script.sh cause_of_deaths.csv 
+  810  vi script.sh 
+  811  sh script.sh cause_of_deaths.csv 
+  812  vi script.sh 
+  813  sh script.sh cause_of_deaths.csv 
+  814  vi script.sh 
+  815  sh script.sh cause_of_deaths.csv 
+  816  vi script.sh 
+  817  sh script.sh cause_of_deaths.csv 
+  818  cat cause_of_deaths.csv | cut -d"," -f2 
+  819  vi script.sh 
+  820  sh script.sh cause_of_deaths.csv 
+  821  echo cause_of_deaths.csv | cut -d"," -f2 
+  822  vi script.sh 
+  823  sh script.sh cause_of_deaths.csv 
+  824  vi script.sh 
+  825  sh script.sh cause_of_deaths.csv 
+  826  vi script.sh 
+  827  sh script.sh cause_of_deaths.csv 
+  828  vi script.sh 
+  829  sh script.sh cause_of_deaths.csv 
+  830  vi script.sh 
+  831  sh script.sh cause_of_deaths.csv 
+  832  vi script.sh 
+  833  sh script.sh cause_of_deaths.csv 
+  834  vi script.sh 
+  835  sh script.sh cause_of_deaths.csv 
+  836  vi script.sh 
+  837  sh script.sh cause_of_deaths.csv 
+  838  vi script.sh 
+  839  sh script.sh cause_of_deaths.csv 
+  840  vi script.sh 
+  841  sh script.sh cause_of_deaths.csv 
+  842  vi script.sh 
+  843  sh script.sh cause_of_deaths.csv 
+  844  awk 'BEGIN {FS=","} {print $19}' cause_of_deaths.csv 
+  845  sh script.sh cause_of_deaths.csv 
+  846  vi script.sh 
+  847  sh script.sh cause_of_deaths.csv 
+  848  ls
+  849  vi selfHarmDeathsUSA.txt 
+  850  cat selfHarmDeathsCHN.txt 
+  851  cat selfHarmDeathsRUS.txt 
+  852  cat selfHarmDeathsIND.txt 
+  853  cat selfHarmDeathsIRN.txt 
+  854  cat selfHarmDeathsGBR.txt 
+  855  cat selfHarmDeathsUKR.txt 
+  856  cat selfHarmDeathsDEU.txt 
+  857  cat selfHarmDeathsCAN.txt 
+  858  cat selfHarmDeathsFRA.txt 
+  859  echo script.sh > newScript.sh
+  860  vi newScript.sh 
+  861  cat script.sh > newScript.sh 
+  862  vi newScript.sh 
+  863  rm newScript.sh 
+  864  ls
+  865  cd
+  866  ls
+  867  ls -la
+  868  rmdir myProject/
+  869  mkdir project
+  870  clear
+  871  ls
+  872  cd project/
+  873  git clone https://github.com/jadoncamacho/CS131PROJECT.git
+  874  ls
+  875  git checkout -b Inference3
+  876  ls
+  877  cd
+  878  mv Inference3/ project/
+  879  ls
+  880  cd project/
+  881  clear
+  882  ls
+  883  cd CS131PROJECT/
+  884  ls
+  885  cd ~/project/
+  886  clear
+  887  git remote add upstream https://github.com/plusplusminusminus/cs131.git
+  888  git status
+  889  git add Inference3/
+  890  git status
+  891  git commit -m "JCAMACHO pushing Inference3 work"
+  892  git remote -v
+  893  git push
+  894  git remote add upstream https://github.com/plusplusminusminus/cs131.git
+  895  git push upstream Inference3
+  896  cd Inference3/
+  897  ls
+  898  mv cause_of_deaths.csv ~/project/
+  899  ls
+  900  cd ~/project/
+  901  git remote -v
+  902  git add Inference3/
+  903  git status 
+  904  git commit -m "JCAMACHO pushing Inference3 work"
+  905  git push upstream Inference3 
+  906  clear
+  907  ls
+  908  CS131PROJECT/
+  909  cd CS131PROJECT/
+  910  ls
+  911  cd ~/project/
+  912  mv Inference3/ ~/project/CS131PROJECT/MiniProjectGroup5/
+  913  ls
+  914  cd CS131PROJECT/
+  915  cd MiniProjectGroup5/
+  916  ls
+  917  git add Inference3/
+  918  git status
+  919  cd ~/project/
+  920  git add Inference3 
+  921  git status
+  922  git commit -m "JCAMACHO pushing Inference3 work"
+  923  git remote -v
+  924  git push upstream Inference3 
+  925  ls
+  926  cd CS131PROJECT/
+  927  ls
+  928  cd MiniProjectGroup5/
+  929  ls
+  930  cd ~/project/
+  931  clear
+  932  git status
+  933  git push upstream --delete Inference3 
+  934  ls
+  935  git checkout -b Inference3
+  936  git remote add upstream https://github.com/plusplusminusminus/cs131.git
+  937  git remore -v
+  938  git remote -v
+  939  git status
+  940  git branch
+  941  git branch -d Inference3 
+  942  cd
+  943  git branch -d Inference3 
+  944  cd project/
+  945  git checkout -b main
+  946  git clone https://github.com/plusplusminusminus/cs131.git
+  947  ls
+  948  cd cs131
+  949  ls
+  950  cd MiniProjectGroup5/
+  951  ls
+  952  cd
+  953  cd project/
+  954  cd CS131PROJECT/
+  955  ls
+  956  cd MiniProjectGroup5/
+  957  ls
+  958  mv Inference3/ ~/project/cs131/MiniProjectGroup5/
+  959  cd ~/project/
+  960  ls
+  961  rm CS131PROJECT/
+  962  rmdir CS131PROJECT/
+  963  git checkout -b Inference3
+  964  git remote add upstream https://github.com/plusplusminusminus/cs131.git
+  965  git add Inference3/
+  966  cd cs131/
+  967  ks
+  968  ls
+  969  git checkout -b Inference3
+  970  git remote -v
+  971  git remote add upstream https://github.com/plusplusminusminus/cs131.git
+  972  git add MiniProjectGroup5/
+  973  git status 
+  974  git commit -m "JCAMACHO pushing Inference3 work"
+  975  git remote -v
+  976  git push upstream Inference3 
+  977  cd
+  978  ls
+  979  cd project/
+  980  ls
+  981  cd CS131PROJECT/
+  982  ls
+  983  cd ~/project/
+  984  ls
+  985  rm -r CS131PROJECT/
+  986  y
+  987  ls
+  988  cd
+  989  ls
+  990  git remote -v
+  991  clear
+  992  cd project/
+  993  cd cs131/
+  994  cs MiniProjectGroup5/
+  995  cd MiniProjectGroup5/
+  996  ls
+  997  clear
+  998  ls
+  999  cd Inference3/
+ 1000  clear
+ 1001  ls
+ 1002  history > cmds.log
