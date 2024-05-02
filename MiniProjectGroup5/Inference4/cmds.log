@@ -1,0 +1,34 @@
+CREATE SUBDIRECTORY FOR MINIPROJECT
+    1  mkdir MiniProjectGroup5
+    2  cd MiniProjectGroup5/
+
+CREATE LIST OF GROUP MEMBERS
+    3  vi members.txt
+    4  git add members.txt
+
+ADD LIST OF GROUP MEMBERS TO REPO
+    5  git commit -m "added group members list"
+    6  git push
+
+CREATE METADATA FILE
+    7  vi metadata.txt
+    8  vi stats.awk
+    9  awk -f stats.awk < cause_of_deaths.csv >>metadata.txt
+   10  vi metadata.txt
+
+ADD METADATA FILE TO REPO
+   11  git add cause_of_deaths_new.csv metadata.txt stats.awk
+   12  git commit -m "added metadata info" -a
+   13  git status
+   14  git push
+
+CREATE INFERENCE4 SUBFILES (EXTRACT PER COUNTRY)
+   15  mkdir Inference4
+   16  cd Inference4
+   17  cp ../../scripts/inference4.sh .
+   18  cp ../cause_of_deaths.csv .
+   19  ./inference4.sh
+
+GENERATE GRAPH
+   20  ./hiv-graph.py
+
